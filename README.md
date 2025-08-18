@@ -7,6 +7,5 @@ Official implementation of "Forgetting the Background: A Masking Approach for En
 * **Run training script** :
 
 ```bash
-$ cd BGM
-$ CUDA_VISIBLE_DEVICES=0  nohup python -u train.py --name basicunet_results  --model BasicUNet_plus   --num_workers 8 > log.BGM_results 2>&1 &
+CUDA_VISIBLE_DEVICES=0   python -u train.py --name basicunet_results  --model BasicUNet_plus   --num_workers 8 
 ```
