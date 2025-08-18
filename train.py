@@ -133,6 +133,9 @@ class Trainer(object):
   
             batch = data.shape[0]
 
+            data = torch.cat([data, positive], 0)
+            mask = torch.cat([mask, mask], 0)
+
             data = data.to(self.device)
             labels = mask.to(self.device)
 
